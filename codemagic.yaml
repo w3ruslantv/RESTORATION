@@ -6,7 +6,6 @@ workflows:
     scripts:
       - flutter create . --platforms=android
       - flutter pub get
-      - flutter build apk --release --split-per-abi   # ← BUNU KULLAN
+      - flutter build apk --debug
     artifacts:
-      - build/app/outputs/flutter-apk/*-release.apk   # ← Hepsini yayınla
-
+      - build/app/outputs/flutter-apk/app-debug.apk
